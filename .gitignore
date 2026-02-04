@@ -10,6 +10,11 @@ PartGen
 testInput
 validate_collision_models
 
+# New build artifacts
+build/*.o
+build/*.mod
+bin/
+
 # SLURM output logs
 slurm-*.out
 
@@ -17,6 +22,10 @@ slurm-*.out
 **/Run_shear/*/
 **/Run_sphcyl_shear/*/
 **/Run_sphcyl_shear2/*/
+
+# New run directories (keep template)
+runs/*/
+!runs/template/
 
 # Generated particle data
 particle_input.dat

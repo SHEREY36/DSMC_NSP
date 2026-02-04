@@ -1,0 +1,18 @@
+# DSMC_NSP Template Input File
+#
+# NOTE: The Fortran parser reads this file sequentially and does NOT skip comment lines.
+# This is a REFERENCE template showing what each line means.
+# For actual use, copy the clean version (without comments) from system_input.dat
+#
+# Line 1: Domain dimensions (m) - xlength, ylength, zlength
+# Line 2: DSMC grid resolution - nx_dsmc, ny_dsmc, nz_dsmc
+# Line 3: Measurement grid resolution - nx_meas, ny_meas, nz_meas
+# Line 4: Number of simulated particles (PIP)
+# Line 5: Simulation-to-real scaling factor (F_N)
+# Line 6: Particle diameter (m), aspect ratio - Supported AR: 1.1, 1.25, 1.5, 2.0, 2.5, 3.0
+# Line 7: Particle density (kg/m³)
+# Line 8: Particle-particle restitution coefficient (alpha_pp)
+# Line 9: Timestep (s), end time (s)
+# Line 10: Periodic boundary conditions - T/F for x, y, z
+# Line 11-13: Wall velocities (3 components each) for x/y/z-normal planes
+# Line 14: Random walk flag - T or F
