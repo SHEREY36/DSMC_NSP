@@ -1,5 +1,7 @@
 # Local-only notes
 notes.md
+CLAUDE.md
+.claude/
 
 # Compiled objects, modules, and executables
 *.o
