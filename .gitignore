@@ -1,0 +1,31 @@
+# Local-only notes
+notes.md
+
+# Compiled objects, modules, and executables
+*.o
+*.mod
+ShearDSMC
+ShearDSMC2
+PartGen
+testInput
+validate_collision_models
+
+# SLURM output logs
+slurm-*.out
+
+# Simulation run output data
+**/Run_shear/*/
+**/Run_sphcyl_shear/*/
+**/Run_sphcyl_shear2/*/
+
+# Generated particle data
+particle_input.dat
+
+# Generated validation/sampling output
+chi_samples.txt
+gmm_samples.txt
+inputs_r05.txt
+validation_output.txt
+pchi_curve.txt
+p1hit_table.txt
+delta_eps_max_table.txt

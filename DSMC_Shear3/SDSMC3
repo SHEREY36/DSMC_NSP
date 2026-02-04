@@ -1,0 +1,31 @@
+#!/bin/sh -l
+#SBATCH -A morri353
+#SBATCH -p cpu
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=12
+#SBATCH --time=96:00:00
+#SBATCH --job-name ShearDSMC3
+
+cd $SLURM_SUBMIT_DIR
+
+cd ./Run_sphcyl_shear2
+cd ./100
+../../ShearDSMC2 >& out &
+cd ../95
+../../ShearDSMC2 >& out &
+cd ../90
+../../ShearDSMC2 >& out &
+cd ../85
+../../ShearDSMC2 >& out &
+cd ../80
+../../ShearDSMC2 >& out &
+cd ../75
+../../ShearDSMC2 >& out &
+cd ../70
+../../ShearDSMC2 >& out &
+cd ../65
+../../ShearDSMC2 >& out &
+cd ../60
+../../ShearDSMC2 >& out &
+
+wait

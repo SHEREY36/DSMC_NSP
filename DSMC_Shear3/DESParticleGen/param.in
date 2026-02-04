@@ -1,0 +1,39 @@
+0.01d0						! Solids Fraction
+0.01d0						! Particle Diameter
+2.0d0                                           ! Aspect Ratio
+2500.d0						! Particle Density
+0.10D0					! System xlength
+0.10D0					! System ylength
+0.10D0					! System zlength
+5               5               5 			! DSMC Grid Resolution
+20		20		20			! Measure Grid Resolution
+1.0D-02						! kTm
+1.0D-02						! kTr
+1.0D0						! Particle-Particle Restitution
+100000						! Number of Particles
+500.d0						! Time stop
+.true. .true. .true.		! Periodic boundaries
+0.d0		0.d0				! Velocities along plane with x-normal
+0.d0		0.d0				! Velocities along plane with y-normal
+0.d0		0.d0				! Velocities along plane with z-normal
+.F.							! Flag for random walk
+
+! Provide inputs as follows:
+! ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+! 	solids fraction (lM) [-]
+! 	particle diameter (lM) [m]
+! 	aspect ratio
+! 	particle density (lM) [kg/m^3]
+! 	xlength of the domain [m]
+! 	ylength of the domain [m]
+! 	zlength of the domain [m]
+!  NX,NY,NZ_DSMC
+!  KTm
+!  N
+!  Time end
+!  Periodic
+!  v_yz, w_yz
+!  u_xz, w_xz
+!  u_xy, v_xy
+
+0.670400D-01  0.167600D-01  0.167600D-01
